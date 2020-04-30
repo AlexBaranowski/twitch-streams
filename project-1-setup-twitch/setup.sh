@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 
+#
+# This simple bash script install obs in version defined in OBS_BRANCH
+#
+
 # Stritc mode
 set -euo pipefail
 
 # VARS
-# Tried with version 25-> fail because of old cmake
+# Tried with version 25.0.8 -> failed because of old cmake
 OBS_BRANCH="24.0.0"
 
 # Basic req
