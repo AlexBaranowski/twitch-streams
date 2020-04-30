@@ -58,3 +58,7 @@ cmake -DUNIX_STRUCTURE=1 -DBUILD_BROWSER=ON -DCEF_ROOT_DIR="../../cef_binary_377
 make -j4
 sudo make install
 
+[ -e /etc/ld.so.conf.d/local.conf ] || {
+  echo /usr/local/lib | sudo tee /etc/ld.so.conf.d/local.conf
+  sudo ldconfig
+}
