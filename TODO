@@ -1,8 +1,5 @@
-- [x] compile and install obs
-- [x] setup twitch
-- [x] make logo - maybe I will change it in the future :)
-- [x] add bio
-- [x] add video banner
-- [x] add social
-- [x] add stream schedule
-- [ ] add Spotify
+- [ ] Basic config (tab as 4 spaces etc., color, new aliases and slightly changed key-bindings).
+- [ ] Plugin manager
+- [ ] Python plugins
+- [ ] GO plugins
+- [ ] NerdTREE && commenter plugins

@@ -10,7 +10,7 @@ I stream, or going to, about 1 hour at 19 o'clock UTC.
 
 Well I hope that during my journey I will be able to achieve:
 
-- [ ] Setup the Twitch
+- [x] Setup the Twitch
 - [ ] Setup the nvim
 - [ ] Linux From Scratch
 - [ ] Learning Go
