@@ -1,0 +1,37 @@
+---
+- hosts: all
+  tasks:
+    - name: update the system
+      yum:
+        name: '*'
+        state: latest
+    - name: Install epel repository
+      yum:
+        name: epel-release
+        state: present
+    - name: Install snapd
+      yum:
+        name: snapd
+        state: present
+    - name: Enable classic snap support
+      file:
+        src: /var/lib/snapd/snap
+        dest: /snap
+        owner: root
+        group: root
+        state: link
+    - name: start and enable snapd socket
+      command: systemctl enable --now snapd.socket
+    - name: install neovim (nvim) snap
+      snap:
+        name: nvim
+        channel: beta
+        classic: yes
+    - name: Make sure that .config/nvim for vagrant user is setup
+      file:
+        path: /home/vagrant/.config/nvim
+        owner: vagrant
+        group: vagrant
+        state: directory
+        recurse: yes
+

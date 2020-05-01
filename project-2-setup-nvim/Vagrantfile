@@ -1,0 +1,35 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+Vagrant.configure("2") do |config|
+
+  config.hostmanager.enabled = false
+  config.hostmanager.manage_host = true
+  config.hostmanager.manage_guest = true
+  config.hostmanager.ignore_private_ip = false
+  config.hostmanager.include_offline = true
+  
+  config.vm.define "el7" do |el7|
+    el7.vm.hostname = 'el7.example.com'
+    el7.hostmanager.aliases = %w(el7)
+    el7.vm.box ="eurolinux-vagrant/centos-7"
+    el7.vm.synced_folder ".", "/vagrant", type: "rsync"
+    el7.vm.provision "ansible" do |ansible|
+      ansible.playbook = "playbook.yml"
+      ansible.become = true
+    end
+    el7.vm.provision :hostmanager
+  end
+
+  config.vm.define "el8" do |el8|
+    el8.vm.hostname = 'el8.example.com'
+    el8.hostmanager.aliases = %w(el8)
+    el8.vm.box ="eurolinux-vagrant/centos-8"
+    el8.vm.synced_folder ".", "/vagrant", type: "rsync"
+    el8.vm.provision "ansible" do |ansible|
+      ansible.playbook = "playbook.yml"
+      ansible.become = true
+    end
+    el8.vm.provision :hostmanager
+  end
+
+end

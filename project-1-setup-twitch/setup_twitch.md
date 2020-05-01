@@ -15,6 +15,7 @@ You can also setup Autmod in dashboard.
 ## Some tabs open in browser:
   - https://www.twitch.tv/make_void/ - to self test
   - https://dashboard.twitch.tv/u/make_void/home
+  - https://dashboard.twitch.tv/u/make_void/stream-manager
 
 
 ## Setup OBS
