@@ -1,2 +1,4 @@
+01-05-2020:
+  - Install neovim with vagrant && snap on el7 && el8
 30-04-2020:
   - Add twitch configuration info

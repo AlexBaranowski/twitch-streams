@@ -34,4 +34,11 @@
         group: vagrant
         state: directory
         recurse: yes
+    - name: Copy neovim configuration file
+      copy:
+        src: files/neovim.config.vim
+        dest: /home/vagrant/.config/nvim/init.vim
+        owner: vagrant
+        group: vagrant
+        mode: 0664
 
