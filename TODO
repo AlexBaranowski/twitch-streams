@@ -1,6 +1,10 @@
-- [x] Installation with snap on EL7 && EL8 - Try it with Vagrant boxes
-- [ ] Basic config (tab as 4 spaces etc., color, new aliases and slightly changed key-bindings).
-- [ ] Plugin manager
-- [ ] Python plugins
-- [ ] GO plugins
-- [ ] NerdTREE && commenter plugins
+TODO
+ - [x] Installation with snap on EL7 && EL8 - Try it with Vagrant boxes
+ - [x] Basic config (tab as 4 spaces etc., color, new aliases and slightly changed key-bindings).
+ - [x] Plugin manager
+ - [ ] Python plugins
+ - [ ] GO plugins
+ - [ ] NerdTREE && commenter plugins
+
+FIXME: 
+  youcompleteme problem with compilation

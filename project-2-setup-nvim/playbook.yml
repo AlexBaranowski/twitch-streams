@@ -2,16 +2,22 @@
 - hosts: all
   vars:
     target_user: "vagrant"
-    packages: [ 'git' ]
+    packages: [ 'git', 'python36', 'redhat-lsb-core', 'cmake', 'python36-devel', 'gcc']
+    python_packages: "pynvim jedi"
   tasks:
     - name: update the system
       yum:
         name: '*'
         state: latest
+
     - name: Install additional software
       yum:
         name: "{{packages}}"
         state: latest
+
+    - name: Install python modules
+      command: "sudo /usr/bin/pip3 install {{python_packages}}"
+
     - name: Install epel repository
       yum:
         name: epel-release
