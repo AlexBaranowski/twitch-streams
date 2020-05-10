@@ -16,3 +16,8 @@
 ## Running on local machine
 
 Change playbook.yml - change hosts to localhost and add become parameter for play.
+
+## NOTES
+
+1. Run `:PlugInstall` to install plugins.
+2. You compelete me requires running `install.sh`
