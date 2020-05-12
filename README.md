@@ -17,8 +17,12 @@ Well I hope that during my journey I will be able to achieve:
     - https://github.com/trirpi/simple-nvim-config
     - https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/
     - https://octetz.com/docs/2019/2019-04-24-vim-as-a-go-ide/
-- [ ] Make dotfiles repo
+- [x] Make dotfiles repo - it's private
 - [ ] Linux From Scratch
+  - Readings
+    - http://www.linuxfromscratch.org/lfs/ (9.1 stable)
+    - http://www.linuxfromscratch.org/lfs/view/systemd/ (systemD version that was used during stream)
+    -
 - [ ] Learning Go
 - [ ] TBA :)
 
