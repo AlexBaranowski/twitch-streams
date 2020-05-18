@@ -12,6 +12,7 @@ Plug 'raimondi/delimitmate' " auto closing quotes/brackets etc
 Plug 'joshdick/onedark.vim' " color theme
 Plug 'scrooloose/nerdcommenter' " NERDCommenter :)
 Plug 'scrooloose/nerdtree' " NERDTree
+Plug 'aliou/bats.vim' " bats bash automated testing system
 
 " Python plugins
 Plug 'davidhalter/jedi-vim' " problem with youcompleteme so completitions are disabled
