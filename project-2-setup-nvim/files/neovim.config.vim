@@ -23,6 +23,8 @@ call plug#end()
 " General config
 " set tab as 4 spaces
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+" set clipboard to system global clipboard
+set clipboard=unnamedplus
 
 " Backgrounds and truecolor
 set background=dark
