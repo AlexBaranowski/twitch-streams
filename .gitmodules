@@ -1,0 +1,3 @@
+[submodule "project-4-vagrant-lib/vagrant-sh"]
+	path = project-4-vagrant-lib/vagrant-sh
+	url = git@github.com:AlexBaranowski/vagrant-sh

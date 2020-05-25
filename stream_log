@@ -1,3 +1,6 @@
+25-05-2020
+- Work on some simple QA script for Vagrant Boxes that will inform that newest
+  version don't have all providers.
 12-05-2020
 - LFS http://www.linuxfromscratch.org/lfs/view/systemd/chapter03/introduction.html
 09-050-2020:
