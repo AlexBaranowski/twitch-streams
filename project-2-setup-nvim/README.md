@@ -20,4 +20,8 @@ Change playbook.yml - change hosts to localhost and add become parameter for pla
 ## NOTES
 
 1. Run `:PlugInstall` to install plugins.
-2. You compelete me requires running `install.sh`
+2. You compelete me requires running `install.sh --go-completer`
+   ```
+cd ~/.config/share/nvim/plugged/youcompleteme
+install.sh --go-completer
+   ```

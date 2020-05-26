@@ -1,3 +1,6 @@
+26-05-2020
+- Learning go - only 3 lessons, but I also added vim-go, recompiled YouCompleteMe, setup go. I also made quite a lot of experiment to learn golang.
+
 25-05-2020
 - Work on some simple QA script for Vagrant Boxes that will inform that newest
   version don't have all providers.

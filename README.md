@@ -24,6 +24,7 @@ Well I hope that during my journey I will be able to achieve:
   - Readings:
     - https://golangbot.com/learn-golang-series/
     - https://golangbot.com/learn-golang-series/
+    - https://golangbot.com/learn-golang-series/
 - [ ] Making new build system for EuroLinux 8.2 (like Koji but simpler, like OpenBuild Service but without Perl).
 
 - [ ] Linux From Scratch
