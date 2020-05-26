@@ -17,6 +17,8 @@ Plug 'aliou/bats.vim' " bats bash automated testing system
 " Python plugins
 Plug 'davidhalter/jedi-vim' " problem with youcompleteme so completitions are disabled
 
+" Go plugins adds Go* procedures
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 
