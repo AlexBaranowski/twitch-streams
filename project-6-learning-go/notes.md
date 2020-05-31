@@ -72,7 +72,7 @@ type.
 Multiple vars can be declared
 ```go
 var name,age = 'Alex', 25
-var name1 [name...] [TYPE FOR ALL NAMES] =   ...
+var name1 [, name...] [TYPE FOR ALL NAMES] =   ...
 var name1 type1, name2 type2 =   ... // This will fail
 // There is also special construct
 var (
@@ -94,4 +94,101 @@ Some titbit - := can be used as long as ONE on the left side is new
 var name string = "Alex"
 name, age := "Ala", 25
 ```
+
+### Types
+
+- bool (or operator is || and and operator is &&)
+- Numeric:
+    - int{8,16,32,64}, int
+    - uint{8,16,32,64}, uint
+    - float32, float64, BUT there is no float
+    - complex64, complex128
+    - byte
+    - rune (alias for int32)
+- string
+
+IMPORTANT int and uint are platform dependable (32 or 64 bits)
+IMPORTANT float64 is default float type
+
+
+```go
+c := 6 + 8i // shorthand for complex numbers
+```
+
+Go is strict when it comes to types and operations on them. One can NOT add
+float and int
+
+```
+i := 64
+j := 64.2
+sum := i + j // fail
+```
+
+The variables must be explicit casted
+
+```go
+//my_float = float32(my_int) //  This will fail!
+my_float = float64(my_int) 
+```
+
+### Constants
+
+In go constant is constant, and it must be know during compilation phase.
+
+```go
+x := math.Sqrt(4)
+const z float64 = 2.0000
+//const y float64 = math.Sqrt(16) // this will fail
+fmt.Println("x: ", x)
+fmt.Println("const z: ", z)
+```
+
+BTW. By the default the constants don't have any type as long as the code program
+ask about type. There is also possibility to make typed constants.
+
+```go
+const typedconststring String = "aaaaa"
+const nottyped = "aaaaab"
+```
+
+When it comes to numeric constants, they type can be determined on fly:
+
+```go
+const a = 1
+var int32Var = a
+var int64Var int64 = a
+var float64Var float64 = a
+var complex128Var complex128 = a
+```
+
+```go
+const b = 1.5
+// var int32Var = b 
+// var int64Var int64 = b // fail with: constant 1.5 truncated to integer
+var float64Var float64 = b
+var complex128Var complex128 = b
+```
+
+
+### Functions
+
+General syntax is:
+
+```go
+func function_name([parameter type],[parameters types]) returntype {
+    // body
+}
+```
+
+The funny things
+
+- You can return multiple values
+  ```go
+func castTwoIntToFloat(a,b int)(float64, float64){
+    return (float64)a, (float64)b
+}
+```
+
+TODO "Named return values"
+
 
