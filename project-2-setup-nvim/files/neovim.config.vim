@@ -33,10 +33,10 @@ set background=dark
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set termguicolors
 colorscheme onedark
-
 " Set airline theme
 let g:airline_theme='cool'
-
+" Enable line numbering
+set nu
 " go to different screen with ctrl JKLH
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
