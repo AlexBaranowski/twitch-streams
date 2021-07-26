@@ -17,11 +17,17 @@
 
 Change playbook.yml - change hosts to localhost and add become parameter for play.
 
+You can also use the following command on original playbook
+
+```
+ansible-playbook playbook.yml -b -i 127.0.0.0.1, --connection=local --extra-vars "target_user=$USER"
+```
+
 ## NOTES
 
 1. Run `:PlugInstall` to install plugins.
-2. You compelete me requires running `install.sh --go-completer`
-   ```
-cd ~/.config/share/nvim/plugged/youcompleteme
-install.sh --go-completer
-   ```
+2. You complete me requires running `install.sh --go-completer`
+    ```
+    cd ~/.config/share/nvim/plugged/youcompleteme
+    install.sh --go-completer
+    ```
