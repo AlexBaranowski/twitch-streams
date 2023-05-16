@@ -2,7 +2,7 @@
 - hosts: all
   vars:
     target_user: "vagrant"
-    packages: [ 'git', 'python36', 'redhat-lsb-core', 'cmake', 'python36-devel', 'gcc', 'gcc-c++', 'xclip']
+    packages: [ 'git', 'cmake', 'python-devel', 'gcc', 'gcc-c++', 'xclip']
     python_packages: "pynvim jedi"
   tasks:
     - name: Install epel-release
